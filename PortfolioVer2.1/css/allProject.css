@@ -1,0 +1,229 @@
+/* ------------ ------------ ------------ ------------ */
+/* --GENERAL-- ------------ */
+img
+  {
+    width: calc(100% - 2px); /* Trừ 2px của viền */
+    height: auto;
+    border: 1px solid #D2D2D220;
+  }
+hr
+  {
+    margin: 6rem 0;
+    width: 100%;
+    height: 1px;
+    background-color: #D2D2D260;
+  }
+  
+  
+/* ------------ ------------ ------------ ------------ */
+/* --Main-- ------------ */
+.container
+  {
+    margin-top: 12rem;
+  }
+
+.title
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6rem;
+  }
+.btn-Previous{margin-right: 24px;}
+.btn-Next{margin-left: 24px;}
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Grid-- ------------ */
+.grid
+  {
+    width: 100%;
+  }
+.grid:after /* Clear fix */
+  {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Grid Item-- ------------ */
+.grid-item,
+.grid-sizer /* Độ rộng cột */
+  {
+    width: 264px;
+  }
+.gutter-sizer /* Khoảng cách ngang giữa các đối tượng */
+  {
+    width: 24px;
+  }
+.grid-item 
+  {
+    position: relative;
+    float: left;
+    margin-bottom: 24px;
+  }
+.grid-item-small-2
+  {
+    width: 552px;
+  }
+.grid-item-large-2
+  {
+    width: 840px;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Grid Item Info-- ------------ */
+.itemInfo
+  {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    opacity: 0;
+    border: 1px solid #fAD6D6;
+    transition: all 400ms ease;
+  }
+.itemInfo p
+  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 82%;
+    text-align: center;
+  }
+.grid-item:hover .itemInfo
+  {
+    opacity: 1;
+  }
+body.darkMode .itemInfo
+  {
+    background-color: #282828;
+  }
+.projectName
+  {
+    margin-bottom: 2rem;
+    color: #D2D2D2;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Video-- ------------ */
+.video-card
+  {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 4.2rem;
+  }
+.video-wrapper 
+  {
+    height: calc(552px / 16 * 9);
+    overflow: hidden;
+  }
+.video-wrapper iframe 
+  {
+    width: 100%;
+    height: 100%;
+  }
+.video-wrapper,
+.video-credit
+  {
+    width: 552px;
+  }
+.extra-credit p
+  {
+    display: inline-block;
+    margin-right: 12px;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --RESPONSIVE-- ------ */
+@media (max-width: 1152px)
+  {
+    hr
+      {
+        margin: 2.8rem 0 4rem 0;
+      }
+
+    /* --Grid Item-- ------------ */
+    .grid-item,
+    .grid-sizer
+      {
+        width: 228px;
+      }
+    .grid-item-large-2
+      {
+        width: 100%;
+      }
+    .grid-item-small-2
+      {
+        width: 480px;
+      }
+
+     /* --Video-- ------------ */
+    .video-card
+      {
+        flex-direction: column;
+        align-items: center;
+      }
+    .video-wrapper,
+    .video-credit
+      {
+        width: 606px;
+      }
+    .video-wrapper 
+      {
+        height: calc(606px / 16 * 9);
+      }
+  }
+
+@media (max-width: 764px)
+  {
+    hr
+      {
+        margin: 3.2rem 0 4rem 0;
+      }
+    .title
+      {
+        letter-spacing: -0.08em;
+      }
+    .btn-Previous{margin-right: 8px;}
+    .btn-Next{margin-left: 8px;}
+
+    /* --Grid Item-- ------------ */
+    .grid-item,
+    .grid-sizer,
+    .grid-item-small-2
+      {
+        width: 100%;
+      }
+    .grid-item 
+      {
+        margin-bottom: 16px;
+      }
+
+    /* --Video-- ------------ */
+    .video-card
+      {
+        margin-bottom: 2.4rem;
+      }
+    .video-wrapper,
+    .video-credit
+      {
+        width: 100%;
+      }
+    .video-wrapper 
+      {
+        height: calc(100% / 16 * 9);
+      }
+  }

@@ -1,0 +1,132 @@
+/* ------------ ------------ ------------ ------------ */
+/* --Main-- ------------ */
+.container
+  {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+.error404Title
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.error404Content
+  {
+    margin-top: 10rem;
+    text-align: center;
+  }
+
+#typo1
+  {
+    transform: translateY(10px);
+  }
+#typo2
+  {
+    transform: translateY(-90px);
+  }
+#typo3
+  {
+    transform: translateY(30px);
+  }
+#typo4
+  {
+    transform: translateY(-70px);
+  }
+#typo5
+  {
+    transform: translateY(30px);
+  }
+
+#typo6
+  {
+    transform: translateY(-20px);
+  }
+#typo7
+  {
+    transform: translateY(40px);
+  }
+#typo8
+  {
+    transform: translateY(-60px);
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --RESPONSIVE-- ------ */
+@media (max-width: 1152px)
+  {
+    .error404Title
+      {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 36rem;
+      }
+    .error404Content
+      {
+        margin-top: 2rem;
+      }
+
+    #typo1
+      {
+        transform: translateY(0) rotate(16.52deg);
+      }
+    #typo2
+      {
+        transform: translateY(0) rotate(-16.31deg);
+      }
+    #typo3
+      {
+        transform: translateY(0) rotate(18.47deg);
+      }
+    #typo4
+      {
+        transform: translateY(0) rotate(15.71deg);
+      }
+    #typo5
+      {
+        transform: translateY(0) rotate(11.07deg);
+      }
+    
+    #typo6
+      {
+        transform: translateY(0) rotate(-16.19deg);
+      }
+    #typo7
+      {
+        transform: translateY(0) rotate(-18.84deg);
+      }
+    #typo8
+      {
+        transform: translateY(0) rotate(46.42deg);
+      }
+  }
+
+@media (max-width: 764px)
+  {
+    .container
+      {
+        top: 52%;
+      }
+    .error404Title
+      {
+        flex-direction: column;
+        width: 100%;
+      }
+    .error404Title p
+      {
+        margin-bottom: 2rem;
+        display: block;
+      }
+    .error404Content
+      {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+      }
+  }

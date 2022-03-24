@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>DungBu - Project</title>
+    <link rel="shortcut icon" href="./img/logo/favicon.png" type="image/x-icon">
+    <meta name="description" content="Tổng hợp những sản phẩm thiết kế website, slide powerpoint...của dungbubu." />
+    <meta name="keywords" content="Dũng Bự, Portfolio cá nhân, Thiết kế Website, Thiết kế Slide Powerpoint, 
+                                   Thiết kế Marketing, Banner và Poster, Motion Graphic">
+
+    <meta property="og:title" content="DungBu - Project" />
+    <meta property="og:site_name" content="dungbubu" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://dungbubu.com/project.html" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="Tổng hợp những sản phẩm thiết kế website, slide powerpoint...của dungbubu." />
+
+    <meta property="fb:app_id" content="564999674494503"/>
+    <meta property="fb:admins" content="100001250312137"/>
+    
+    <meta property = "og:locale" content = "vi_VN" />
+    <meta property="geo.region" content="VN-HN" />
+    <meta property="geo.placename" content="Hà Nội" />
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json">
+    <link rel="apple-touch-icon" href="./img/logo/apple-touch-icon.png">
+  
+    <!-- CSS Chung -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- CSS Riêng -->
+    <link rel="stylesheet" href="./css/project.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5K2K1N41X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-D5K2K1N41X');
+    </script>
+  </head>
+
+  <body>
+    <header class="navbar tx28-32"> <!-- //////////// //////////// -->
+      <a ID="logo" href="./index.html">.dungbubu</a>
+
+      <div class="navMenu">
+        <a href="./index.html" class="navItem">home</a>
+        <a href="./about.html" class="navItem">about me</a>
+        <a href="./project.html" class="navItem">project</a>
+        <a href="./blog.html" class="navItem">blog</a>
+        <a href="./contact.html" class="navItem">contact</a>
+      </div>
+
+      <div class="burgerMenu" onclick="hamburgerFunction()">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+    </header> <!-- //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <section class="modal"> <!-- //////////// //////////// -->
+      <div class="burgerFill">
+        <a href="./index.html" class="tx52-56">home</a>
+        <a href="./about.html" class="tx52-56">about me</a>
+        <a href="./project.html" class="tx52-56">project</a>
+        <a href="./blog.html" class="tx52-56">blog</a>
+        <a href="./contact.html" class="tx52-56">contact</a>
+      </div>
+    </section> <!-- //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <main class="container"> <!-- //////////// //////////// -->
+      <h1>Tổng hợp những sản phẩm thiết kế website, slide powerpoint...của dungbubu.</h1>
+
+      <p class="tx120-60" id="typo">project</p>
+
+      <div class="colMain">
+        <div id="projectMenu1" onmouseover="activeThis(event,'projectMenu1')" onmouseout="deactiveThis()">
+          <div class="decor"><p>01.</p><hr></div>
+          <a href="./project/webProject.html"><p class="tx52-56 option">Website Design</p></a>
+        </div>
+
+        <div id="projectMenu2" onmouseover="activeThis(event,'projectMenu2')" onmouseout="deactiveThis()">
+          <div class="decor"><p>02.</p><hr></div>
+          <a href="./project/pptProject.html"><p class="tx52-56 option">Presentation</p></a>
+        </div>
+
+        <div id="projectMenu3" onmouseover="activeThis(event,'projectMenu3')" onmouseout="deactiveThis()">
+          <div class="decor"><p>03.</p><hr></div>
+          <a href="./project/mktProject.html"><p class="tx52-56 option">Banner & Poster</p></a>
+        </div>
+
+        <div id="projectMenu4" onmouseover="activeThis(event,'projectMenu4')" onmouseout="deactiveThis()">
+          <div class="decor"><p>04.</p><hr></div>
+          <a href="./project/mgProject.html"><p class="tx52-56 option">Motion Graphic</p></a>
+        </div>
+        <hr>
+      </div>
+
+      <div class="colExtra">
+        <p class="tx12-20 verticalText">------ scroll down ------ ></p>
+      </div>
+    </main> <!-- //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+    <!-- jQuerry library -->
+    <script src="./lib/jQuerry-3.5.1/jquery-3.5.1.js"></script>
+    <!-- JS Chung -->
+    <script src="./js/index.js"></script>
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+    <!-- Javascript ------------------------------------------------------------------------------------------------ -->
+    <script>
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Thêm trạng thái Active cho Menu đang được mở ------------ ------------
+      navItem[2].classList.add("active");
+      
+
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Hàm add/remove trạng thái Active khi "hover" vào các mục Project ------------ ------------
+      let projectMenu = [document.getElementById("projectMenu1"),
+                        document.getElementById("projectMenu2"),
+                        document.getElementById("projectMenu3"),
+                        document.getElementById("projectMenu4")];
+    
+      function activeThis(evt,menuOrder)
+       {
+          for (i = 0; i < 4; i++) 
+            {
+              projectMenu[i].classList.add("hide");
+            }
+          document.getElementById(menuOrder).classList.remove("hide");
+       }
+
+      function deactiveThis()
+       {
+          for (i = 0; i < 4; i++) 
+            {
+              projectMenu[i].classList.remove("hide");
+            }
+       }
+    </script>
+  </body>
+</html>

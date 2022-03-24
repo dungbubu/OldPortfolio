@@ -1,0 +1,99 @@
+/* ------------ ------------ ------------ ------------ */
+/* --Main-- ------------ */
+.container
+  {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+.contactPicture
+  {
+    position: relative;
+  }
+.contactPicture img
+  {
+    margin-left: calc(1128px - 840px);
+    width: 840px;
+  }
+.contactPicture2
+  {
+    display: none;
+  }
+#typo
+  {
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    transform: translate(50%,-86%);
+  }
+body.darkMode #typo
+  {
+    top: 112%;
+  }
+
+.contactContent
+  {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8rem;
+    width: 100%;
+  }
+.contactLink:hover
+  {
+    text-decoration: underline;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --RESPONSIVE-- ------ */
+@media (max-width: 1152px)
+  {
+    .contactPicture img
+      {
+        margin-left: calc(732px - 606px);
+        width: 606px;
+      }
+    #typo
+      {
+        transform: translate(20px,-86%);
+      }
+
+    .contactContent
+      {
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        margin-top: 6rem;
+        margin-left: 20px;
+      }
+  }
+
+@media (max-width: 764px)
+  {
+    .contactPicture img
+      {
+        margin-left: 0;
+        width: 100%;
+      }
+    .contactPicture1
+      {
+        display: none;
+      }
+    .contactPicture2
+      {
+        display: block;
+      }
+    #typo
+      {
+        left: 50%;
+        transform: translate(-50%,-76%);
+      }
+
+    .contactContent
+      {
+        margin-left: 0;
+        text-align: center;
+      }
+  }

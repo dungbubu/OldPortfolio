@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>DungBu - Contact</title>
+    <link rel="shortcut icon" href="./img/logo/favicon.png" type="image/x-icon">
+    <meta name="description" content="Nếu bạn cần trò chuyện, hãy liên hệ ngay với mình bằng các cách sau." />
+    <meta name="keywords" content="Dũng Bự, Portfolio cá nhân, Thiết kế Website, Thiết kế Slide Powerpoint">
+
+    <meta property="og:title" content="DungBu - Contact" />
+    <meta property="og:site_name" content="dungbubu" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dungbubu.com/contact.html" />
+    <meta property="og:image" content="https://dungbubu.com/img/contact/contact.png" />
+    <meta property="og:description" content="Nếu bạn cần trò chuyện, hãy liên hệ ngay với mình bằng các cách sau." />
+
+    <meta property="fb:app_id" content="564999674494503"/>
+    <meta property="fb:admins" content="100001250312137"/>
+    
+    <meta property = "og:locale" content = "vi_VN" />
+    <meta property="geo.region" content="VN-HN" />
+    <meta property="geo.placename" content="Hà Nội" />
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json">
+    <link rel="apple-touch-icon" href="./img/logo/apple-touch-icon.png">
+  
+    <!-- CSS Chung -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- CSS Riêng -->
+    <link rel="stylesheet" href="./css/contact.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5K2K1N41X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-D5K2K1N41X');
+    </script>
+  </head>
+
+  <body>
+    <header class="navbar tx28-32"> <!-- //////////// //////////// -->
+      <a ID="logo" href="./index.html">.dungbubu</a>
+
+      <div class="navMenu">
+        <a href="./index.html" class="navItem">home</a>
+        <a href="./about.html" class="navItem">about me</a>
+        <a href="./project.html" class="navItem">project</a>
+        <a href="./blog.html" class="navItem">blog</a>
+        <a href="./contact.html" class="navItem">contact</a>
+      </div>
+
+      <div class="burgerMenu" onclick="hamburgerFunction()">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+    </header> <!-- //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <section class="modal"> <!-- //////////// //////////// -->
+      <div class="burgerFill">
+        <a href="./index.html" class="tx52-56">home</a>
+        <a href="./about.html" class="tx52-56">about me</a>
+        <a href="./project.html" class="tx52-56">project</a>
+        <a href="./blog.html" class="tx52-56">blog</a>
+        <a href="./contact.html" class="tx52-56">contact</a>
+      </div>
+    </section> <!-- //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <main class="container"> <!-- //////////// //////////// -->
+      <h1>Nếu bạn cần trò chuyện, hãy liên hệ ngay với mình bằng các cách sau.</h1>
+      
+      <div class="contactPicture">
+        <p class="tx120-60" id="typo">coffee?</p>
+        <img class="contactPicture1" src="./img/contact/contact.png" alt="Coffee coffe with me :>">
+        <img class="contactPicture2" src="./img/contact/contactMini.png" alt="Coffee coffe with me :>">
+      </div>
+
+      <div class="contactContent">
+        <a class="contactLink" href="mailto:nguyenmanhdung1996@gmail.com">email: nguyenmanhdung1996@gmail.com</a>
+        <a class="contactLink" href="https://www.facebook.com/NguyenManhDung1996" target="_blank">facebook: Dũng Bự</a>
+        <a class="contactLink" href="https://www.instagram.com/dungbubu" target="_blank">instagram: dungbubu</a>
+        <a class="contactLink" href="https://www.youtube.com/channel/UCfZnbGb9cABlL5dtnE6QV_A" target="_blank">youtube: Dũng Bự</a>
+        <!-- <a class="contactLink" href="https://t.me/dungbubu" target="_blank">telegram: dungbubu</a> -->
+        <!-- <a class="contactLink" href="https://github.com/dungbubu" target="_blank">github: dungbubu</a> -->
+      </div>
+    </main> <!-- //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+    <!-- jQuerry library -->
+    <script src="./lib/jQuerry-3.5.1/jquery-3.5.1.js"></script>
+    <!-- JS Chung -->
+    <script src="./js/index.js"></script>
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+    <!-- Javascript ------------------------------------------------------------------------------------------------ -->
+    <script>
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Thêm trạng thái Active cho Menu đang được mở ------------ ------------
+      navItem[4].classList.add("active");
+    </script>
+  </body>
+</html>

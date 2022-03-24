@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>DungBu - Blog</title>
+    <link rel="shortcut icon" href="./img/logo/favicon.png" type="image/x-icon">
+    <meta name="description" content="Tổng hợp các bài viết chia sẻ quan điểm cá nhân cũng như hướng dẫn thiết kế của mình." />
+    <meta name="keywords" content="Dũng Bự, Blog cá nhân, Thiết kế, Hướng dẫn, Chia sẻ">
+
+    <meta property="og:title" content="DungBu - Blog" />
+    <meta property="og:site_name" content="dungbubu" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://dungbubu.com/blog.html" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="Tổng hợp các bài viết chia sẻ quan điểm cá nhân cũng như hướng dẫn thiết kế của mình." />
+
+    <meta property="fb:app_id" content="564999674494503"/>
+    <meta property="fb:admins" content="100001250312137"/>
+    
+    <meta property = "og:locale" content = "vi_VN" />
+    <meta property="geo.region" content="VN-HN" />
+    <meta property="geo.placename" content="Hà Nội" />
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json">
+    <link rel="apple-touch-icon" href="./img/logo/apple-touch-icon.png">
+  
+    <!-- CSS Chung -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- CSS Riêng -->
+    <link rel="stylesheet" href="./css/blog.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5K2K1N41X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-D5K2K1N41X');
+    </script>
+  </head>
+
+  <body>
+    <header class="navbar tx28-32"> <!-- //////////// //////////// -->
+      <a ID="logo" href="./index.html">.dungbubu</a>
+
+      <div class="navMenu">
+        <a href="./index.html" class="navItem">home</a>
+        <a href="./about.html" class="navItem">about me</a>
+        <a href="./project.html" class="navItem">project</a>
+        <a href="./blog.html" class="navItem">blog</a>
+        <a href="./contact.html" class="navItem">contact</a>
+      </div>
+
+      <div class="burgerMenu" onclick="hamburgerFunction()">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+    </header> <!-- //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <section class="modal"> <!-- //////////// //////////// -->
+      <div class="burgerFill">
+        <a href="./index.html" class="tx52-56">home</a>
+        <a href="./about.html" class="tx52-56">about me</a>
+        <a href="./project.html" class="tx52-56">project</a>
+        <a href="./blog.html" class="tx52-56">blog</a>
+        <a href="./contact.html" class="tx52-56">contact</a>
+      </div>
+    </section> <!-- //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <main class="container"> <!-- //////////// //////////// -->
+      <h1>Tổng hợp các bài viết chia sẻ quan điểm cá nhân cũng như hướng dẫn thiết kế của mình.</h1>
+      
+      <p class="tx120-60" id="typo">blog</p>
+
+      <div class="blogGrid">
+        <!-- <a class="blogItem boxShadow" href="./blog/blog05.html">
+          <img src="./img/blog/blog05/blog05.png" alt="Download bộ Font Việt hoá" loading="lazy">
+          <div class="blogInfo">
+            <b class="tx24-30">Font Việt hoá</b>
+            <p class="tx16-24">(Update ngày 09/08/2021)</p>
+            <hr>
+            <p class="tx12-20">DATE. 09/08/2021</p>
+            <p class="tx12-20">TAG. DOWNLOAD</p>
+          </div>
+        </a> -->
+
+        <a class="blogItem boxShadow" href="./blog/blog04.html">
+          <img src="./img/blog/blog04/blog04.png" alt="Giveaway" loading="lazy">
+          <div class="blogInfo">
+            <b class="tx24-30">Giveaway</b>
+            <p class="tx16-24">(Bộ Slide tổng kết trường PĐP 2020 - 2021)</p>
+            <hr>
+            <p class="tx12-20">DATE. 09/08/2021</p>
+            <p class="tx12-20">TAG. GIVEAWAY, DOWNLOAD</p>
+          </div>
+        </a>
+
+        <a class="blogItem boxShadow" href="./blog/blog03.html">
+          <img src="./img/blog/blog03/blog03.png" alt="Sửa CV một chút (Phần 3 - Nguồn tham khảo)" loading="lazy">
+          <div class="blogInfo">
+            <b class="tx24-30">Sửa CV một chút</b>
+            <p class="tx16-24">(Phần 3 - Nguồn tham khảo)</p>
+            <hr>
+            <p class="tx12-20">DATE. 08/07/2021</p>
+            <p class="tx12-20">TAG. REFERENCE</p>
+          </div>
+        </a>
+
+        <a class="blogItem boxShadow" href="./blog/blog02.html">
+          <img src="./img/blog/blog02/blog02.png" alt="Sửa CV một chút (Phần 2 - Trình bày)" loading="lazy">
+          <div class="blogInfo">
+            <b class="tx24-30">Sửa CV một chút</b>
+            <p class="tx16-24">(Phần 2 - Trình bày)</p>
+            <hr>
+            <p class="tx12-20">DATE. 01/07/2021</p>
+            <p class="tx12-20">TAG. TUTORIAL</p>
+          </div>
+        </a>
+
+        <a class="blogItem boxShadow" href="./blog/blog01.html">
+          <img src="./img/blog/blog01/blog01.png" alt="Sửa CV một chút (Phần 1 - Nội dung)" loading="lazy">
+          <div class="blogInfo">
+            <b class="tx24-30">Sửa CV một chút</b>
+            <p class="tx16-24">(Phần 1 - Nội dung)</p>
+            <hr>
+            <p class="tx12-20">DATE. 24/06/2021</p>
+            <p class="tx12-20">TAG. TUTORIAL</p>
+          </div>
+        </a>
+      </div>
+    </main> <!-- //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+    <!-- jQuerry library -->
+    <script src="./lib/jQuerry-3.5.1/jquery-3.5.1.js"></script>
+    <!-- JS Chung -->
+    <script src="./js/index.js"></script>
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+    <!-- Javascript ------------------------------------------------------------------------------------------------ -->
+    <script>
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Thêm trạng thái Active cho Menu đang được mở ------------ ------------
+      navItem[3].classList.add("active");
+    </script>
+  </body>
+</html>

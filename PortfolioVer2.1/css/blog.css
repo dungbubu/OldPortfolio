@@ -1,0 +1,97 @@
+/* ------------ ------------ ------------ ------------ */
+/* --GENERAL-- ------------ */
+img
+  {
+    width: 100%; /* #tipsBlog img, #sourceBlog img */
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Main-- ------------ */
+.container
+  {
+    margin-top: 12rem;
+  }
+
+#typo
+  {
+    margin: 20rem 0 6rem 0;
+    text-align: right;
+  }
+
+.blogGrid
+  {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 24px;
+    margin-bottom: 4rem;
+  }
+
+.blogItem
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 360px;
+    height: 360px;
+    background-color: #FFF;
+    transition: all 400ms ease;
+  }
+.blogInfo
+  {
+    display: block;
+    margin: auto 24px 12px 24px;
+  }
+hr
+  {
+    margin: 12px 0 8px 0;
+    width: 46px;
+    height: 1px;
+    background-color: #B2B2B2;
+    transition: all 400ms ease;
+  }
+.tx12-20
+  {
+    color: #B2B2B2;
+  }
+.blogItem:hover 
+  {
+    transform: translateY(-8px);
+  }
+.blogItem:hover hr
+{
+  width: 60px;
+}
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --RESPONSIVE-- ------ */
+@media (max-width: 1152px)
+  {
+    .blogGrid
+      {
+        grid-template-columns: auto auto;
+      }
+
+    .blogItem
+      {
+        width: 354px;
+        height: 354px;
+      }
+  }
+
+@media (max-width: 764px)
+  {
+    .blogGrid
+      {
+        grid-template-columns: auto;
+        grid-gap: 40px;
+      }
+
+    .blogItem
+      { 
+        width: 286px;
+        height: 286px;
+      }
+  }

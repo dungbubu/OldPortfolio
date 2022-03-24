@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>DungBu - Portfolio</title>
+    <link rel="shortcut icon" href="./img/logo/favicon.png" type="image/x-icon">
+    <meta name="description" content="Xin chào, đây là Portfolio cá nhân của Dũng Bự - nơi tổng hợp những sản phẩm 
+          thiết kế website, slide powerpoint, motion graphic...và cả thông tin cá nhân về mình nữa." />
+    <meta name="keywords" content="Dũng Bự, Portfolio cá nhân, Thiết kế Website, Thiết kế Slide Powerpoint">
+
+    <meta property="og:title" content="DungBu - Portfolio" />
+    <meta property="og:site_name" content="dungbubu" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dungbubu.com/" />
+    <meta property="og:image" content="https://dungbubu.com/img/home/dungbu.png" />
+    <meta property="og:description" content="Xin chào, đây là Portfolio cá nhân của Dũng Bự - nơi tổng hợp những sản phẩm 
+          thiết kế website, slide powerpoint, motion graphic...và cả thông tin cá nhân về mình nữa." />
+    
+    <link rel="canonical" href="https://dungbubu.com/">
+    <meta name="format-detection" content="telephone=no">
+
+    <meta property="fb:app_id" content="564999674494503"/>
+    <meta property="fb:admins" content="100001250312137"/>
+    
+    <meta property = "og:locale" content = "vi_VN" />
+    <meta property="geo.region" content="VN-HN" />
+    <meta property="geo.placename" content="Hà Nội" />
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json">
+    <link rel="apple-touch-icon" href="./img/logo/apple-touch-icon.png">
+  
+    <!-- CSS Chung -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- CSS Riêng -->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5K2K1N41X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-D5K2K1N41X');
+    </script>
+  </head>
+
+  <body>
+    <header class="navbar tx28-32"> <!-- //////////// //////////// -->
+      <a ID="logo" href="./index.html">.dungbubu</a>
+
+      <div class="navMenu">
+        <a href="./index.html" class="navItem">home</a>
+        <a href="./about.html" class="navItem">about me</a>
+        <a href="./project.html" class="navItem">project</a>
+        <a href="./blog.html" class="navItem">blog</a>
+        <a href="./contact.html" class="navItem">contact</a>
+      </div>
+
+      <div class="burgerMenu" onclick="hamburgerFunction()">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+    </header> <!-- //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <!-- <section class="popUp">
+      <div class="popUpBox">
+        <p class="title tx52-56">Dark mode?</p>
+        <div>
+          <button>Yay</button>
+          <button>Nay</button>
+        </div>
+      </div>
+    </section> -->
+
+
+
+
+    <section class="modal"> <!-- //////////// //////////// -->
+      <div class="burgerFill">
+        <a href="./index.html" class="tx52-56">home</a>
+        <a href="./about.html" class="tx52-56">about me</a>
+        <a href="./project.html" class="tx52-56">project</a>
+        <a href="./blog.html" class="tx52-56">blog</a>
+        <a href="./contact.html" class="tx52-56">contact</a>
+      </div>
+    </section> <!-- //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <main class="container"> <!-- //////////// //////////// -->
+      <h1>Xin chào, đây là Portfolio cá nhân của Dũng Bự - nơi tổng hợp những sản phẩm 
+          thiết kế website, slide powerpoint, motion graphic...và cả thông tin cá nhân về mình nữa.</h1>
+
+      <p class="title tx24-30" id="welcome1">Welcome to my portfolio</p>
+
+      <div class="homePicture">
+        <picture>
+          <source type="image/webp" srcset="./img/home/dungbu.webp">
+          <img src="./img/home/dungbu.png" alt="I'am dungbu">
+        </picture>
+        <div class="typography">
+          <p class="tx120-60 typo" id="typo1">Hello</p>
+          <p class="tx120-60 typo">i'am</p>
+          <p class="tx120-60 typo" id="typo3">dungbu</p>
+        </div>
+      </div>
+
+      <div class="homeContent">
+        <div id="homeContent">
+          <a href="./project.html">all projects <span class="arrow">→</span></a>
+          <!-- <a href="./about.html">my information <span class="arrow">→</span></a> -->
+          <!-- <a href="./project.html">my blog <span class="arrow">→</span></a> -->
+          <a href="./contact.html">coffe and a chat? <span class="arrow">→</span></a>
+        </div>
+
+        <p class="title tx24-30" id="welcome2">Welcome to my portfolio</p>
+
+        <a href="./project.html">
+          <button class="btn">All projects</button>
+        </a>
+      </div>
+    </main> <!-- //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+    <!-- jQuerry library -->
+    <script src="./lib/jQuerry-3.5.1/jquery-3.5.1.js"></script>
+    <!-- JS Chung -->
+    <script src="./js/index.js"></script>
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+    <!-- Javascript ------------------------------------------------------------------------------------------------ -->
+    <script>
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Thêm trạng thái Active cho Menu đang được mở ------------ ------------
+      navItem[0].classList.add("active");
+    </script>
+  </body>
+</html>
