@@ -1,0 +1,41 @@
+{
+    "short_name": "dungbubu",
+    "name": "DungBu • Web Designer",
+    "icons": [
+      {
+        "src": "/img/logo/faviconMini.png",
+        "type": "image/png",
+        "sizes": "24x24"
+      },
+      {
+        "src": "/img/logo/favicon.png",
+        "type": "image/png",
+        "sizes": "48x48"
+      },
+      {
+        "src": "/img/logo/favicon_72x72.png",
+        "type": "image/png",
+        "sizes": "72x72"
+      },
+      {
+        "src": "/img/logo/favicon_96x96.png",
+        "type": "image/png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "/img/logo/favicon_144x144.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      },
+      {
+        "src": "/img/logo/favicon_192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ],
+    "start_url": "https://dungbubu.com",
+    "display": "standalone",
+    "orientation": "portrait",
+    "theme_color": "#242424", 
+    "background_color": "#FFFFFF"
+  }
